@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="浏览适合 6-12 岁孩子阅读的宇宙、生命、地球和科技知识。"
+    />
+    <title>科普知识 | kexue.fun</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="science">
+    <div id="site-header"></div>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <span class="section-label">知识星图</span>
+          <h1>发现一个更大的世界</h1>
+          <p>宇宙有多大？植物会喝水吗？从你感兴趣的问题开始探索吧。</p>
+        </div>
+      </section>
+
+      <section class="section explorer">
+        <div class="container">
+          <div class="explorer-tools">
+            <label class="search-box">
+              <input
+                id="search-input"
+                type="search"
+                aria-label="搜索科普知识"
+                placeholder="搜索你感兴趣的科学问题"
+                autocomplete="off"
+              />
+            </label>
+            <div id="category-filters" class="filter-row" aria-label="按分类筛选"></div>
+          </div>
+
+          <p id="result-count" class="result-count"></p>
+          <div id="science-list" class="card-grid"></div>
+          <div id="empty-state" class="empty-state" hidden>
+            <h2>暂时没有找到这个问题</h2>
+            <p>换个关键词，或者试试其他科普分类吧。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
